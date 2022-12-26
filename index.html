@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>REGISTER PAGE</h1>
+
+    <form action="">
+      <div class="inputs-div">
+        <label for="firstname">First Name:</label>
+        <input
+          class="inputs"
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Your First Name"
+          required
+        />
+      </div>
+
+      <div class="inputs-div">
+        <label for="lastname">Last Name:</label>
+        <input
+        class="inputs"
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Your Last Name"
+          required
+        />
+      </div>
+
+      <div class="inputs-div">
+        <label for="email">Email:</label>
+        <input class="inputs" type="email" name="email" id="email" placeholder="Your Email" />
+      </div>
+
+      <div class="inputs-div">
+        <label for="password">Password:</label>
+        <input
+          class="inputs"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Your Password"
+          required
+        />
+      </div>
+
+      <div class="inputs-div">
+        <label for="date">Day of Birth:</label>
+        <input
+          class="inputs"
+          type="date"
+          name="date"
+          id="date"
+          min="2020-01-01"
+          value="2022-01-01"
+        />
+      </div>
+
+      <div class="inputs-div">
+        <label for="tel">Phone:</label>
+        <input
+          class="inputs"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Your Phone Number"
+        />
+      </div>
+
+      <div class="inputs-div">
+        <label for="adress">Adress:</label>
+        <textarea name="adress" id="adress" cols="21" rows="5"></textarea>
+      </div>
+
+      <div class="inputs-div">
+        <label for="country">Country:</label>
+        <select class="inputs" name="country" id="country">
+          <option value="">Select Country</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Germany">Germany</option>
+          <option value="USA">USA</option>
+          <option value="US">US</option>
+        </select>
+      </div>
+
+      <div class="inputs-div">
+        <label for="male">Gender:</label>
+
+        <div class="gender-div">
+          <input class="radio-check" type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input
+            class="radio-check"
+            type="radio"
+            name="gender"
+            id="female"
+            checked
+          />
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <div class="div-buton">
+        <div class="btn-container">
+          <input type="submit" value="Save" />
+          <input type="reset" value="Clear" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
